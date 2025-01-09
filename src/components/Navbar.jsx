@@ -2,6 +2,7 @@ import logo from "../assets/Logo2.png";
 import { CiMail } from "react-icons/ci";
 import { FaLinkedin } from "react-icons/fa";
 import { CONTACT } from "../assets/constants";
+import BotonDescargaPDF from "./BotonDescargaPDF";
 
 
 const Navbar = () => {
@@ -13,6 +14,7 @@ const Navbar = () => {
       <div className="m-3 flex items-center justify-center gap-4 text-2xl">
         <a href={`mailto:${CONTACT.email}`}><CiMail /></a>
         <a href="https://www.linkedin.com/in/fabian-huervo-de-la-cruz-74a631257/"><FaLinkedin /></a>
+        <BotonDescargaPDF />
       </div>
     </nav>
   );
