@@ -1,6 +1,6 @@
 const BotonDescargaPDF = () => {
   const handleDownload = () => {
-    const url = "/public/CV.pdf"; // Ruta correcta desde public
+    const url = "public/CV.pdf"; // Ruta correcta desde public
     const link = document.createElement("a");
     link.href = url;
     link.download = "CV.pdf"; // Nombre con el que se descargará el archivo
