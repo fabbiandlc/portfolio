@@ -26,7 +26,7 @@ function About() {
         </div>
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center lg:justify-start">
-            <p className="font-light my-4 max-w-xl py-6">
+            <p className="font-light my-4 max-w-xl py-10">
               Como estudiante de Ingeniería en Sistemas Computacionales en el
               Instituto Tecnológico Superior de Coatzacoalcos (ITESCO), combino
               mi formación académica con una pasión autodidacta por el
