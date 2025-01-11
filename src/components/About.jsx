@@ -8,7 +8,7 @@ function About() {
     threshold: 0.2, // Se activa cuando el 20% del componente es visible
   });
   return (
-    <div ref={aboutRef} className="my-20">
+    <div ref={aboutRef} className="my-20 pt-0 p-20">
       <motion.div
         className="border-b border-neutral-900 pb-4"
         initial={{ opacity: 0, y: -50 }}
@@ -19,7 +19,7 @@ function About() {
           Sobre <span className="text-neutral-500">Mí</span>
         </h2>
         <div className="flex flex-wrap justify-around">
-          <div className="w-full lg:w-1/2 lg:pr-8 pb-8">
+          <div className="w-full flex justify-center lg:w-1/2 lg:pr-8 pb-8">
             <div className="flex items-center justify-center">
               <img className="rounded-2xl" src={aboutImg} alt="sobre_mi" />
             </div>
