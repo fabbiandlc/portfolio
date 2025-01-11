@@ -3,9 +3,9 @@ import { motion } from "motion/react";
 
 function Hero() {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+    <div className="border-b border-neutral-900 pb-4 lg:mb-10">
       <motion.div
-        className="flex flex-wrap"
+        className="flex flex-wrap justify-around"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, easing: "ease-out" }}
@@ -19,9 +19,7 @@ function Hero() {
               Estudiante de Ingeniería en sistemas
             </span>
             <p className="my-2 max-w-xl py-6 font-light tracking-tighter">
-              Estudiante apasionado por el desarrollo de software, con sólidos
-              conocimientos fundamentales en tecnologías web y programación. Mi
-              stack técnico incluye HTML, CSS y JavaScript para el desarrollo
+              Estudiante con conocimientos en HTML, CSS y JavaScript para el desarrollo
               frontend, complementado con Java y Node.js para el backend. Manejo
               herramientas de control de versiones como Git, lo que me permite
               colaborar eficientemente en proyectos de desarrollo.
