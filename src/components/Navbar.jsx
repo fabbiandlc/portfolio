@@ -3,6 +3,8 @@ import { CiMail } from "react-icons/ci";
 import { FaLinkedin } from "react-icons/fa";
 import { CONTACT } from "../assets/constants";
 import BotonDescargaPDF from "./BotonDescargaPDF";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 
 const Navbar = () => {
@@ -13,6 +15,7 @@ const Navbar = () => {
       </div>
       <div className="m-3 flex items-center justify-center gap-4 text-2xl">
         <a href={`mailto:${CONTACT.email}`}><CiMail /></a>
+        <a href="https://wa.me/529221973362 "><FaWhatsapp /></a>
         <a href="https://www.linkedin.com/in/fabian-huervo-de-la-cruz-74a631257/"><FaLinkedin /></a>
         <BotonDescargaPDF />
       </div>

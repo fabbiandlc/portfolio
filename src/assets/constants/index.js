@@ -63,5 +63,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Jáltipan, Veracruz, México",
   phoneNo: "+52 922 197 33 62",
-  email: "fahuervodelacruz@hotmail.com",
+  email: "isic20.fhuervod@itesco.edu.mx",
 };

@@ -1,6 +1,7 @@
 import { CONTACT } from "../assets/constants";
 import { CiMail } from "react-icons/ci";
 import { FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Contacto() {
   return (
@@ -18,6 +19,10 @@ function Contacto() {
 
         <a href="https://www.linkedin.com/in/fabian-huervo-de-la-cruz-74a631257/">
           <FaLinkedin className="mr-5 text-2xl" />
+        </a>
+
+        <a href="https://wa.me/529221973362">
+          <FaWhatsapp className="mr-5 text-2xl" />
         </a>
       </div>
     </div>
