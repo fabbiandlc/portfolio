@@ -5,58 +5,127 @@ import { FaReact } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { BsFiletypeSql } from "react-icons/bs";
 import { BsFiletypeXml } from "react-icons/bs";
-import { motion } from "motion/react";
+import { FaGitAlt } from "react-icons/fa"; // Icono para Git
+import { FaNodeJs } from "react-icons/fa"; // Icono para Node.js
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function Tecnologias() {
   const { ref: aboutRef, inView: isAboutInView } = useInView({
-    triggerOnce: true, // La animación se dispara solo una vez
-    threshold: 0.4, // Se activa cuando el 20% del componente es visible
+    triggerOnce: true,
+    threshold: 0.4,
   });
+
+  const cardVariants = {
+    initial: { scale: 1 },
+    hover: {
+      scale: 1.1,
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <div ref={aboutRef} className="my-20">
+    <div ref={aboutRef} className="my-20 px-6 lg:px-16"> {/* Agregué padding consistente */}
       <motion.div
-        className="border-b border-neutral-800 pb-24"
+        className="border-b border-neutral-800 pb-24 max-w-7xl mx-auto" // Contenedor centrado
         initial={{ opacity: 0, y: -50 }}
-        animate={isAboutInView ? { opacity: 1, y: 0 } : {}} // Se anima solo si es visible
-        transition={{ duration: 0.8, easing: "ease-out" }}
+        animate={isAboutInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h2 className="my-20 text-center text-4xl">Tecnologías</h2>
-        <div className="flex flex-wrap items-center justify-center gap-4 ">
-          <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <motion.div
+            variants={cardVariants}
+            initial="initial"
+            whileHover="hover"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
             <FaHtml5 className="text-7xl" />
             <p className="text-center mt-3">HTML</p>
-          </div>
-          <div className="rounded-2xl border-4 border-neutral-800 p-4">
+          </motion.div>
+
+          <motion.div
+            variants={cardVariants}
+            initial="initial"
+            whileHover="hover"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
             <FaCss3 className="text-7xl" />
             <p className="text-center mt-3">CSS</p>
+          </motion.div>
 
-          </div>
-          <div className="rounded-2xl border-4 border-neutral-800 p-4">
+          <motion.div
+            variants={cardVariants}
+            initial="initial"
+            whileHover="hover"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
             <FaJs className="text-7xl" />
             <p className="text-center mt-3">JS</p>
+          </motion.div>
 
-          </div>
-          <div className="rounded-2xl border-4 border-neutral-800 p-4">
+          <motion.div
+            variants={cardVariants}
+            initial="initial"
+            whileHover="hover"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
             <FaReact className="text-7xl" />
             <p className="text-center mt-3">REACT</p>
+          </motion.div>
 
-          </div>
-          <div className="rounded-2xl border-4 border-neutral-800 p-4">
+          <motion.div
+            variants={cardVariants}
+            initial="initial"
+            whileHover="hover"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
             <FaJava className="text-7xl" />
             <p className="text-center mt-3">JAVA</p>
+          </motion.div>
 
-          </div>
-          <div className="rounded-2xl border-4 border-neutral-800 p-4">
+          <motion.div
+            variants={cardVariants}
+            initial="initial"
+            whileHover="hover"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
             <BsFiletypeSql className="text-7xl" />
             <p className="text-center mt-3">MYSQL</p>
+          </motion.div>
 
-          </div>
-          <div className="rounded-2xl border-4 border-neutral-800 p-4">
+          <motion.div
+            variants={cardVariants}
+            initial="initial"
+            whileHover="hover"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
             <BsFiletypeXml className="text-7xl" />
             <p className="text-center mt-3">.NET</p>
+          </motion.div>
 
-          </div>
+          <motion.div
+            variants={cardVariants}
+            initial="initial"
+            whileHover="hover"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
+            <FaGitAlt className="text-7xl" />
+            <p className="text-center mt-3">GIT</p>
+          </motion.div>
+
+          <motion.div
+            variants={cardVariants}
+            initial="initial"
+            whileHover="hover"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
+            <FaNodeJs className="text-7xl" />
+            <p className="text-center mt-3">NODE.JS</p>
+          </motion.div>
         </div>
       </motion.div>
     </div>

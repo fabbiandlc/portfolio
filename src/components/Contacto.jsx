@@ -20,7 +20,6 @@ function Contacto() {
         <a href="https://www.linkedin.com/in/fabian-huervo-de-la-cruz-74a631257/">
           <FaLinkedin className="mr-5 text-2xl" />
         </a>
-
         <a href="https://wa.me/529221973362">
           <FaWhatsapp className="mr-5 text-2xl" />
         </a>
