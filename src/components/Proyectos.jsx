@@ -12,7 +12,7 @@ function Proyectos() {
     {
       title: "Refinería Dos Bocas",
       description: "Página web de la Refinería Dos Bocas en Veracruz, México.",
-      link: "https://refineriadosbocas.vercel.app/",
+      link: "https://refineria-git-main-fabbiandlcs-projects.vercel.app/",
       technologies: ["React", "Vite", "Tailwind CSS"],
       image: miniaturaRefineria,
     },
